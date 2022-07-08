@@ -48,6 +48,9 @@ if __name__ == '__main__':
     sierpinski((A, B, C), LENGTH/2)
 
     while run:
+        clock.tick(FPS)
+        pg.time.delay(DELAY)
+
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 run = False
